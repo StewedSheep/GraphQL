@@ -2,8 +2,6 @@
 
 This is school project that help to learn about GRAPHQL.
 
-[Live Server](******)
-
 ## Project goals
 
 The objective of this project is to learn the GraphQL query language, by creating your own profile page.
@@ -37,11 +35,3 @@ Beside those sections it will have a mandatory section for the generation of sta
 
 Use live-server from index.html or
 [Link to page](******)
-
-you can only Login with your kood account
-![Alt Text](******)
-
-## In page
-
-With my account
-![Alt Text](******)

@@ -70,9 +70,11 @@ body {
 
 /* All other CSS rules remain the same */
 .login_page {
+  margin-right: 20%;
   display: flex;
   flex-direction: column;
 }
+
 
 .login_page h1 {
   text-align: center;
@@ -98,7 +100,7 @@ input[type="password"] {
 }
 
 .form_submit {
-  width: 100%;
+  width: 115%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
@@ -179,3 +181,4 @@ input[type="password"] {
 .logout_btn:hover {
   background-color: #e41515; /* Slightly darker background on hover */
 } 
+

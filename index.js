@@ -2,7 +2,6 @@ import Login from "./login.js"
 import Student from "./class.js"
 export const main = document.getElementById("main_page")
 
-
 const currentURL = window.location.href;
 const path = currentURL.split("/").pop();
 if (path !== "") {
