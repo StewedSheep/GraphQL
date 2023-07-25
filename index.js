@@ -3,7 +3,6 @@ import Student from "./class.js"
 export const main = document.getElementById("main_page")
 
 
-window.onload = function() {
 const currentURL = window.location.href;
 const path = currentURL.split("/").pop();
 if (path !== "") {
@@ -18,4 +17,4 @@ document.addEventListener("DOMContentLoaded", () => {
         main.innerHTML = login.render()
         document.getElementById("login_form").addEventListener("submit", login.handleLogin)
     }
-})}
+})
