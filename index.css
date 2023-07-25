@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* added this to remove default body margin */
+  background-color: #3b3e85c7;
+}
+
+#user_info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; /* changed from width to height */
+  width: 20%; /* set width of side navbar */
+  background-color: #3b3d85; 
+  color: #fff; 
+  padding: 10px;
+  display: flex; 
+  flex-direction: column; /* changed to column from none */
+  align-items: center; /* added to center items vertically */
+  display: flex;
+  flex-direction: row; /* Change the flow direction to row */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user_info_img {
+  margin-bottom: 10px;
+}
+
+.user_info_img img {
+  height: 13vh; /* Set the image height relative to the viewport height */
+}
+
+.user_info_text {
+  margin-bottom: 10px;
+  font-size: 1.4vh; /* Set the font size relative to the viewport height */
+}
+
+.user_info_text .user_info_text_name {
+  font-size: 2.5vh; /* Set the font size relative to the viewport height */
+  font-weight: bold;
+}
+
+.user_info_text .user_info_text_audit {
+  color: #00a0e9;
+  font-size: 2vh; /* Set the font size relative to the viewport height */
+  font-weight: bold;
+}
+
+/* Adjust font size for different window widths */
+@media screen and (max-width: 768px) {
+  .user_info_text .user_info_text_name {
+    font-size: 5vw; /* Set font size relative to the viewport width */
+  }
+
+  .user_info_text .user_info_text_audit {
+    font-size: 2vw; /* Set font size relative to the viewport width */
+  }
+}
+
+
+.main_page {
+  margin-left: 20%; /* instead of using the position property, margin is used to make space for the side navbar */
+  width: 80%; /* reduced width to accommodate the navbar */
+  display: flex;
+  flex-wrap: wrap; /* allows the chart container to wrap onto next line if insufficient space */
+  align-items: center; /* added to center items vertically */
+  justify-content: center;
+}
+
+/* All other CSS rules remain the same */
+.login_page {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_page h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form_input {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form_submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.form_submit:hover {
+  background-color: #008ec7;
+}
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.xp_chart,
+.skill_chart {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 5px;
+  height: 30vh;
+  width: 60vh;
+}
+
+#skill_chart {
+  width: 60vh;
+  height: 60vh;
+}
+
+.xp_chart,
+.skill_chart {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #503f3f;
+  padding: 10px;
+  margin: 5px;
+}
+
+.xp_chart canvas,
+.skill_chart canvas {
+  display: block;
+  box-sizing: border-box;
+  width: 60vh;
+  height: 60vh;
+}
+
+.summary_text {
+  margin-bottom: 10px;
+}
+
+.summary_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.summary_text_title {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+ .logout_btn {
+  background-color: #e06060;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 4%
+}
+
+.logout_btn:hover {
+  background-color: #e41515; /* Slightly darker background on hover */
+} 
